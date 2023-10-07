@@ -5,57 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS</title>
 
-    <style>
-        .grid-3-column-text{
-            column-count: 3;
-            column-gap: 30px;
-            column-width: 200px;
-        }
-        table{
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table,td,th{
-            border: 1px solid black;
-        }
-        
+    <!-- Custom CSS -->
+    <link href=CSS/reset.css rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+  
 
-    </style>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Ini Header -->
-<h1>Halo my name is Prasetyo Nugroho, I'm a web designer</h1>
-<p>Lorem <sup>ipsum</sup> dolor sit <sub>amet</sub> adipisicing elit. Hic,<b>veniam</b>  quibusdam vel expedita <em>suscipit</em> ad distinctio exercitationem <i>nulla</i>  natus ducimus soluta amet sed dolore reiciendis voluptate! Veniam, aliquid doloremque?</p>
+    <div class="section-header">
+        <div class="container">
+            <h1>Halo my name is Prasetyo Nugroho, I'm a web designer</h1>
+        <p>
+        Lorem <sup>ipsum</sup> dolor sit <sub>amet</sub> adipisicing elit. Hic,<b>veniam</b>  quibusdam vel expedita <em>suscipit</em> ad distinctio exercitationem <i>nulla</i>  natus ducimus soluta amet sed dolore reiciendis voluptate! Veniam, aliquid doloremque?
+        </p>
+        </div>
+    </div>
 
     <!-- Ini Menu -->
-<ul>
-    <li><a href="#">Profil</a></li>
-    <li><a href="#">Biodata</a></li>
-    <li><a href="#">Riwayat</a></li>
-    <li><a href="#">Hobi</a></li>
-    <li><a href="assets/giraffe-8250955_1280.jpg" target="_blank">Kontak</a></li>
-    <!-- <li>test</li> -->
-</ul>
+    <div class="section-menu">
+        <div class="container">
+            <ul>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Biodata</a></li>
+                <li><a href="#">Riwayat</a></li>
+                <li><a href="#">Hobi</a></li>
+                <li><a href="assets/giraffe-8250955_1280.jpg" target="_blank">Kontak</a></li>
+                <!-- <li>test</li> -->
+            </ul>
+        </div>
+    </div>
 
 
-    <!-- Ini Hero Section -->
-<video width="50%"controls>
-    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<iframe width="560" height="600px" src="https://www.youtube.com/embed/mBbX0NOEOPw?si=2R1TjzICyVuutlWH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <!-- Ini Hero Section -->
+<div class="hero-section">
+    <div class="container">   
+        <video max-height="80%" controls>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <iframe max-height="600px" src="https://www.youtube.com/embed/mBbX0NOEOPw?si=2R1TjzICyVuutlWH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+    </div>   
+</div>
 
 <!-- <img width="100%" src="assets/egg-8289259_1280.png" alt=""> -->
 
 <!-- Ini Profil Section -->
-<h4>Profil</h4>
-<div class="grid-3-column-text">
-    <p>Lorem ipsum dolor sit amet <span style="color: red;">consectetur</span> adipisicing elit. Ullam sed et, numquam, illum enim aliquid odit voluptates <a href="https://www.merriam-webster.com/dictionary/qui" target="_blank">qui</a> voluptas animi dignissimos quas repudiandae corporis deleniti sunt labore minus, illo in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed et, numquam, illum enim aliquid odit voluptates qui voluptas animi dignissimos quas repudiandae corporis deleniti sunt labore minus, illo in.</p>
+<div class="section-profil">
+    <div class="container">
+        <h4>Profil</h4>
+            <div class="grid-3-column-text">
+            <p>Lorem ipsum dolor sit amet <span style="color: red;">consectetur</span> adipisicing elit. Ullam sed et, numquam, illum enim aliquid odit voluptates <a href="https://www.merriam-webster.com/dictionary/qui" target="_blank">qui</a> voluptas animi dignissimos quas repudiandae corporis deleniti sunt labore minus, illo in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed et, numquam, illum enim aliquid odit voluptates qui voluptas animi dignissimos quas repudiandae corporis deleniti sunt labore minus, illo in.</p>
+            </div>
+    </div>
 </div>
 
-
 <!-- Section Hobi -->
+<div class="section-hobi">
+    <div class="container">
+
 <table>
     <tr>
         <th>No</th>
@@ -73,31 +88,37 @@
         <td>Capcay</td>
     </tr>
 </table>
-
+    </div>
+</div>
 <!-- Contact Form -->
+
+<div class="section-form">
+    <div class="container">
+        <h2>Please Fill in these form</h2>
+        <br>
 <form action="">
     <div class="form-group">
-        <label>Nama</label>
-        <input type="text" placeholder="Enter your name"/>
+        <label class="label-input">Nama</label>
+        <input class="form-input" type="text" placeholder="Enter your name"/>
     </div>
 
     <div class="form-group">
-        <label>E-mail</label>
-        <input type="text" placeholder="Enter your e-mail"/>
+        <label class="label-input">E-mail</label>
+        <input class="form-input" type="text" placeholder="Enter your e-mail"/>
     </div>
 
     <div class="form-group">
-        <label>Company</label>
-        <input type="text" placeholder="Enter your current Company"/>
+        <label class="label-input">Company</label>
+        <input class="form-input" type="text" placeholder="Enter your current Company"/>
     </div>
 
     <div class="form-group">
-        <label>Enter Meeting date</label>
-        <input type="date" placeholder="choose your meeting date"/>
+        <label class="label-input">Enter Meeting date</label>
+        <input class="form-input" type="date" placeholder="choose your meeting date"/>
     </div>
 
     <div class="form-group">
-        <label>Choose Meeting type</label>
+        <label class="label-input">Choose Meeting type</label>
         <select name="Meeting-type" id="Meeting-type">
             <option value="1">Online</option>
             <option value="2">Offline</option>
@@ -105,40 +126,53 @@
     </div>
 
     <div class="form-group">
-        <label>Message</label>
-        <textarea rows="2"></textarea>
+        <label class="label-input">Message</label>
+        <textarea rows="5"></textarea>
     </div>
+
 
     <div class="form-group">
-          <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">HTML</label><br>
-
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">CSS</label><br>
-
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">JavaScript</label>
+        <div class="group-selection">
+            <p>select first language</p>
+              <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">HTML</label><br>
+            
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">CSS</label><br>
+            
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+            <br>
+            <br>
+            
+            <p>select second language</p>
+            <div class="form-group">
+                  <input  type="radio" id="golang" name="fav_language2" value="golang">
+                    <label for="golang">GOLANG</label><br>
+        
+                    <input  type="radio" id="php" name="fav_language2" value="php">
+                    <label for="php">PHP</label><br>
+        
+                    <input  type="radio" id="ruby" name="fav_language2" value="ruby">
+                    <label for="ruby">RUBY</label>
+            </div>
+         
+            
+            <div class="form-group">
+                <button class="btn" type="submit">Submit</button>
+                <br>  
+                <input style="width: 100%;" type="button" value="Submit">
+            </div>
+            </div>
+        </div>
+               
     </div>
 
-    <br>
-
-    <div class="form-group">
-          <input type="radio" id="golang" name="fav_language2" value="golang">
-            <label for="golang">GOLANG</label><br>
-
-            <input type="radio" id="php" name="fav_language2" value="php">
-            <label for="php">PHP</label><br>
-
-            <input type="radio" id="ruby" name="fav_language2" value="ruby">
-            <label for="ruby">RUBY</label>
-    </div>
-    
-    <div class="form-group">
-        <button type="submit">Submit</button>
-        <input type="button" value="Submit">
-    </div>
 
 </form>
+    </div>
+</div>
+
 
 </body>
 

@@ -1,0 +1,148 @@
+/* Global CSS*/
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #F0EDEE;
+    background-color: #07393C;
+}
+h4{
+    margin-bottom: 20px;
+}
+body a{
+    text-decoration: none;
+}
+
+.grid-3-column-text{
+    column-count: 3;
+    column-gap: 30px;
+    column-width: 200px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,td,th{
+    border: 2px solid black;
+    padding: 20px;  
+    
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-header{
+    background-color: #90DDF0;
+    margin: 0px 0px 40px 0px;
+    display: flex;
+    flex-direction: center;
+    color: #0A090C;
+}
+
+.section-menu li{
+    list-style: none;
+    background-color: #90DDF0;
+    border-radius: 14px;
+    color: #0A090C;
+}
+.section-menu li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    color: #0A090C;
+
+}
+.section-menu li a:hover{
+    text-decoration: none;
+    color: #F0EDEE;
+    background-color: #0A090C;
+    border-radius: 14px;
+
+}
+.section-menu ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-profil{
+    background-color: #90DDF0;
+    color: #0A090C;
+    padding: 40px 0px;
+}
+.section-hobi{
+    margin-top: 40px;
+}
+
+.section-form .container{
+    background-color: #F0EDEE;
+    border-radius: 20px;
+    color: #0A090C;
+    max-width: 800px;
+    margin-top: 60px;
+}
+.label-input{
+    display: block;
+}
+
+.form-input{
+    width: 50%;
+    padding: 10px;
+}
+.form-group{
+    margin-bottom: 50px;
+}
+.form-group textarea{
+    width: 420px;
+    max-width: 100%;
+ 
+}
+
+.btn{
+    padding: 13px 15px 11px 15px;
+    background-color: #0A090C;
+    color: #F0EDEE;
+    border-radius: 14px;
+}
+.btn:hover{
+    background-color: #F0EDEE;
+    color: #0A090C;
+    cursor: pointer;
+}
+/*End Globals CSS */
+
+
+/* breaking point */
+@media screen and (max-width: 1024px) {
+   .section-form{
+        padding: 35px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 720px) {
+    .container{
+        padding: 15px;
+    }
+    .section-menu ul{
+        display: block;
+    }
+    .section-menu ul a{
+        margin:10px 0;
+    }
+    .section-form{
+        padding: 25px;
+    }
+    .form-input{
+        width: 90%;
+        padding: 10px;
+    }
+}
+

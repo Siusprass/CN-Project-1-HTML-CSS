@@ -1,1 +1,0 @@
-tukarAngkaByReference(angka1, angka2);

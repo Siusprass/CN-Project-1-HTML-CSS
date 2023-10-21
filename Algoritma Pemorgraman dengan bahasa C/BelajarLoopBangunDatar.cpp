@@ -25,9 +25,13 @@ int main (){
 
     // Persegi Berlubang
 
-    for (int Baris = 1; Baris <= 5; Baris++)
+    int angkasaya;
+    printf("Masukan panjang sisi : \n");
+    scanf("%d", &angkasaya);
+
+    for (int Baris = 1; Baris <= angkasaya; Baris++)
     {
-        for (int Kolom = 1; Kolom <= 5; Kolom++)
+        for (int Kolom = 1; Kolom <= angkasaya; Kolom++)
         {
             // Cara 1
             // if (Baris==1 || Kolom==1 || Baris==5 || Kolom==5){
@@ -37,7 +41,7 @@ int main (){
             // }
 
             // Cara 2
-            if(Baris > 1 && Baris < 5 && Kolom > 1 && Kolom < 5)
+            if(Baris > 1 && Baris < angkasaya && Kolom > 1 && Kolom < angkasaya)
             {
                 printf(" ");
             } else {
